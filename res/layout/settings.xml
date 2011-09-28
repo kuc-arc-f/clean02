@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent"
+                android:background="#FFFFFF"
+                android:padding="10px" >
+
+    <TextView android:id="@+id/TextView_PortName" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:text="Port Name:"
+              android:textColor="#000000" />
+
+    <EditText android:id="@+id/EditText_PortName" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:background="@android:drawable/editbox_background"
+              android:layout_below="@id/TextView_PortName"
+              android:textColor="#000000" />
+              
+    <TextView android:id="@+id/TextView_PortSettings" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:text="Port Settings:"
+              android:layout_below="@id/EditText_PortName"
+              android:textColor="#000000" />
+
+    <EditText android:id="@+id/EditText_PortSettings" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:background="@android:drawable/editbox_background"
+              android:layout_below="@id/TextView_PortSettings"
+              android:textColor="#000000" />
+  
+    <Button android:id="@+id/ok" 
+            android:layout_width="150dp" 
+            android:layout_height="wrap_content" 
+            android:layout_below="@id/EditText_PortSettings"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10px"
+            android:text="Save"
+            android:textColor="#000000"
+            android:onClick="SaveSettings" />
+</RelativeLayout>
